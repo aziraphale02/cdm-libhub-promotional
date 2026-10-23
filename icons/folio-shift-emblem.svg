@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 44" width="40" height="44" fill="none" role="img" aria-label="CDM LibHub Emblem">
+  <title>CDM LibHub Emblem — Folio Shift</title>
+  <g id="folio-shift-emblem">
+    <!-- Left Folio Surface (Forest Green) -->
+    <polygon points="1.5,9.5 17.5,2.5 17.5,39.5 1.5,39.5" fill="#116B3A" />
+    <!-- Right Shifted Upper Folio (Forest Green) -->
+    <polygon points="21,8.5 37,1.5 37,20.5 21,27.5" fill="#116B3A" />
+    <!-- Narrow Lime Accent Strip -->
+    <polygon points="21,29.5 37,22.5 37,25 21,32" fill="#B7E467" />
+    <!-- Dark Green Inner Fold -->
+    <polygon points="21,34 38.5,26.3 38.5,34.8 21,42.5" fill="#102F26" />
+  </g>
+</svg>

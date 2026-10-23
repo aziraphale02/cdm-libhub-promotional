@@ -1,0 +1,29 @@
+{
+  "name": "cdm-libhub-promotional-website",
+  "version": "1.0.0",
+  "description": "Official promotional website and curricular book catalog for CDM LibHub — Colegio de Montalban Integrated Library Management System",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js",
+    "build": "node scripts/verify_build.js",
+    "test": "node scripts/verify_build.js"
+  },
+  "keywords": [
+    "colegio-de-montalban",
+    "cdm-libhub",
+    "cdm-oneserve",
+    "library-management-system",
+    "promotional-website"
+  ],
+  "author": "Colegio de Montalban",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

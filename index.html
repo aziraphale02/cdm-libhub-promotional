@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDM LibHub — Integrated Library Management System | Colegio de Montalban</title>
+  <meta name="description" content="CDM LibHub is the official integrated library management system of Colegio de Montalban. Browse 48 curricular textbooks, check real-time shelf availability, reserve books, and connect to CDM OneServe.">
+  <meta name="author" content="Colegio de Montalban">
+  <meta name="theme-color" content="#106A2E">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CDM LibHub">
+  <meta property="og:title" content="CDM LibHub — Library Hub. Every Book Within Reach.">
+  <meta property="og:description" content="Search the CDM academic collection, track your loans, and carry your digital library pass — all in one integrated platform.">
+  <meta property="og:image" content="logo.jpg">
+
+  <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+
+  <a class="skip-link" href="#hero">Skip to main content</a>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Primary navigation">
+
+      <!-- Folio Shift (#08) Primary Branding -->
+      <a href="#hero" class="logo logo-folio-shift" aria-label="CDM LibHub home">
+        <!-- Full Horizontal Logo (Desktop & Tablet) -->
+        <svg class="logo-full" viewBox="0 0 174 44" width="174" height="44" fill="none" aria-hidden="true">
+          <g id="folio-shift-emblem">
+            <!-- Left Folio Surface (Forest Green) -->
+            <polygon points="1.5,9.5 17.5,2.5 17.5,39.5 1.5,39.5" fill="#116B3A" />
+            <!-- Right Shifted Upper Folio (Forest Green) -->
+            <polygon points="21,8.5 37,1.5 37,20.5 21,27.5" fill="#116B3A" />
+            <!-- Narrow Lime Accent Strip -->
+            <polygon points="21,29.5 37,22.5 37,25 21,32" fill="#B7E467" />
+            <!-- Dark Green Inner Fold -->
+            <polygon points="21,34 38.5,26.3 38.5,34.8 21,42.5" fill="#102F26" />
+          </g>
+          <text x="49" y="29.5" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="19" letter-spacing="-0.025em">
+            <tspan fill="#202D2B">CDM</tspan>
+            <tspan dx="5.5" fill="#116B3A">LibHub</tspan>
+          </text>
+        </svg>
+        <!-- Standalone Emblem Only (Compact Mobile Fallback <380px) -->
+        <svg class="logo-mark-only" viewBox="0 0 40 44" width="40" height="44" fill="none" aria-hidden="true">
+          <polygon points="1.5,9.5 17.5,2.5 17.5,39.5 1.5,39.5" fill="#116B3A" />
+          <polygon points="21,8.5 37,1.5 37,20.5 21,27.5" fill="#116B3A" />
+          <polygon points="21,29.5 37,22.5 37,25 21,32" fill="#B7E467" />
+          <polygon points="21,34 38.5,26.3 38.5,34.8 21,42.5" fill="#102F26" />
+        </svg>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#catalog">Book Catalog</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#install">Installation Guide</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li class="nav-cta-mobile">
+          <a href="https://portal.cdmconnect.online" aria-label="Open OneServe Portal">Open OneServe ↗</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Direct button to Mother System "CDM: OneServe" -->
+        <a href="https://portal.cdmconnect.online" class="btn btn-primary btn-sm" title="Go to CDM: OneServe Mother Portal" aria-label="Open OneServe Portal">
+          Open OneServe
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7"/><path d="M7 7h10v10"/>
+          </svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero ready" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-tag" data-animate="fade-up">Introducing CDM LibHub</span>
+          <h1 data-animate="fade-up" data-delay="1">
+            Library Hub.<br><span>Every Book Within Reach.</span>
+          </h1>
+          <p class="hero-sub" data-animate="fade-up" data-delay="2">
+            Search the CDM collection, track your loans, and carry your digital library pass — all from your phone.
+          </p>
+          <p class="hero-desc" data-animate="fade-up" data-delay="3">
+            Discover a simpler, faster way to access academic resources, reserve textbooks before visiting campus, and stay connected with Colegio de Montalban's library through one integrated platform.
+          </p>
+          <div class="hero-buttons" data-animate="fade-up" data-delay="4">
+            <a href="#services" class="btn btn-gold">Explore Services</a>
+            <a href="#install" class="btn btn-outline">How to Install</a>
+          </div>
+
+          <ul class="hero-meta" data-animate="fade-up" data-delay="5">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Install the app on your phone
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              One account for library services
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section section-light about">
+      <div class="container about-grid">
+        <div class="about-text" data-reveal>
+          <span class="eyebrow">About the platform</span>
+          <h2>Your Library, Connected.</h2>
+          <p class="lead">
+            CDM LibHub is designed to bring campus library resources, circulation records, and student services into an organized and accessible digital experience. It provides a central platform where students and faculty can find references, monitor due dates, and borrow without long lines or manual paper logs.
+          </p>
+
+          <h3 class="objectives-title">Our objectives</h3>
+          <ul class="objectives">
+            <li data-reveal data-delay="1">
+              <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Make academic textbooks and syllabi references easier to discover
+            </li>
+            <li data-reveal data-delay="2">
+              <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Eliminate physical logbooks with digital QR entrance attendance
+            </li>
+            <li data-reveal data-delay="3">
+              <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Streamline borrowing counter checkouts, returns, and reservation staging
+            </li>
+            <li data-reveal data-delay="4">
+              <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Ensure zero monetary fine burden with transparent SMS loan reminders
+            </li>
+            <li data-reveal data-delay="5">
+              <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              Empower librarians with accurate collection telemetry and audit reports
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-visual" data-reveal>
+          <div class="about-card-stack">
+            <div class="about-card about-card-main">
+              <div class="about-card-head">
+                <div class="about-card-logo">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                <div>
+                  <strong>CDM Library</strong>
+                  <small>Everything in one place</small>
+                </div>
+              </div>
+              <div class="about-rows">
+                <div class="about-row"><span class="about-dot g"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><span class="about-bar w70"></span></div>
+                <div class="about-row"><span class="about-dot y"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/></svg></span><span class="about-bar w85"></span></div>
+                <div class="about-row"><span class="about-dot g"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><span class="about-bar w60"></span></div>
+              </div>
+            </div>
+            <div class="about-card-float a">
+              <span class="about-badge-ico g">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </span>
+              <div><strong>Book Catalog</strong><small>48 Curricular Titles</small></div>
+            </div>
+            <div class="about-card-float b">
+              <span class="about-badge-ico y">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="3" height="3"/><rect x="14" y="7" width="3" height="3"/><rect x="7" y="14" width="3" height="3"/></svg>
+              </span>
+              <div><strong>Digital Pass</strong><small>Instant Counter Checkout</small></div>
+            </div>
+            <div class="about-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES (STUDENT/FACULTY MOBILE & LIBRARIAN DESKTOP) ===================== -->
+    <section id="services" class="section section-white">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">Library Services</span>
+          <h2>Explore Library Services</h2>
+          <p>Discover the services available through the CDM LibHub ecosystem.</p>
+        </div>
+
+        <!-- Role Tabs Switcher for Services -->
+        <div class="services-switcher-wrap" data-reveal>
+          <div class="services-tabs" role="tablist" aria-label="Library Service Categories">
+            <button class="service-tab-btn active" id="svcTabMobile" role="tab" aria-selected="true" onclick="switchServiceTab('mobile')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg>
+              LibHub Mobile (Students &amp; Faculty)
+            </button>
+            <button class="service-tab-btn" id="svcTabDesktop" role="tab" aria-selected="false" onclick="switchServiceTab('desktop')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+              Desktop App (Librarians &amp; Admin)
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Cards Grid Container -->
+        <div id="serviceGridContainer">
+          <!-- Dynamically injected via app.js depending on active tab -->
+        </div>
+
+        <p class="services-note" data-reveal>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          Library services are managed within LibHub. Students and faculty use the mobile app; librarians use the desktop interface.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== FROM OUR SHELVES SHOWCASE ===================== -->
+    <section id="catalog" class="shelves-section">
+      <div class="container">
+        <!-- Centered Section Introduction -->
+        <div class="shelves-intro">
+          <span class="shelves-label">CDM LIBHUB / COLLECTION</span>
+          <h2 class="shelves-heading">From Our Shelves</h2>
+          <div class="shelves-accent-line" aria-hidden="true"></div>
+          <p class="shelves-subtitle">Explore a selection from the CDM library.</p>
+        </div>
+
+        <!-- Category Navigation -->
+        <nav class="shelves-nav-wrap" aria-label="Book categories">
+          <div class="shelves-nav-scroll">
+            <div class="shelves-tabs" role="tablist">
+              <button type="button" class="shelves-tab active" role="tab" id="shelvesTabAll" aria-selected="true" data-category="ALL">All Books</button>
+              <button type="button" class="shelves-tab" role="tab" id="shelvesTabIcs" aria-selected="false" data-category="ICS">Computer Studies</button>
+              <button type="button" class="shelves-tab" role="tab" id="shelvesTabIte" aria-selected="false" data-category="ITE">Teacher Education</button>
+              <button type="button" class="shelves-tab" role="tab" id="shelvesTabIbe" aria-selected="false" data-category="IBE">Business &amp; Entrepreneurship</button>
+            </div>
+          </div>
+          <div class="shelves-nav-divider" aria-hidden="true"></div>
+        </nav>
+
+        <!-- Book Showcase Regular Grid -->
+        <div class="shelves-grid" id="bookGrid" role="region" aria-live="polite" aria-label="From Our Shelves Book Selection">
+          <!-- Injected dynamically via app.js -->
+        </div>
+
+        <!-- Section Footer: Divider and Right-Aligned Link -->
+        <div class="shelves-footer">
+          <div class="shelves-footer-divider" aria-hidden="true"></div>
+          <div class="shelves-footer-link-wrap">
+            <a href="http://localhost:5173/mobile" class="shelves-footer-link" id="linkExploreFullCollection" target="_blank" rel="noopener">
+              Explore the full collection ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick-View Modal for Book Details -->
+    <div class="modal-overlay" id="bookModal" onclick="closeBookModal(event)">
+      <div class="modal-card" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeBookModal()" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+        <div class="modal-body" id="modalContent">
+          <!-- Injected dynamically via app.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section id="how-it-works" class="section section-white">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">How it works</span>
+          <h2>Getting Started Is Simple</h2>
+          <p>Simple steps to start borrowing and managing library resources with CDM LibHub.</p>
+        </div>
+
+        <!-- Role Switcher for How It Works -->
+        <div class="how-role-switcher" data-reveal>
+          <div class="how-tabs" role="tablist">
+            <button class="how-tab-btn active" id="howTabStudent" onclick="switchHowTab('student')">
+              For Students &amp; Faculty (Mobile App)
+            </button>
+            <button class="how-tab-btn" id="howTabStaff" onclick="switchHowTab('staff')">
+              For Librarians (Desktop App)
+            </button>
+          </div>
+        </div>
+
+        <div id="howStepsContainer">
+          <!-- Injected dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INSTALLATION GUIDE ===================== -->
+    <section id="install" class="section section-light install">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">Installation guide</span>
+          <h2>Take LibHub With You</h2>
+          <p>LibHub is used on your phone — install the app to your home screen to get started. Librarians use the administrative interface on a desktop or laptop.</p>
+        </div>
+
+        <div class="install-shell" data-reveal>
+          <!-- Tabs -->
+          <div class="tabs" role="tablist" aria-label="Installation platform">
+            <button class="tab-btn active" role="tab" id="tab-android" aria-controls="panel-android" aria-selected="true" onclick="switchInstallTab('android')">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg>
+              Android <span class="tab-tag">Users</span>
+            </button>
+            <button class="tab-btn" role="tab" id="tab-ios" aria-controls="panel-ios" aria-selected="false" onclick="switchInstallTab('ios')">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="12" height="20" x="6" y="2" rx="2"/><path d="M17 5.5a3 3 0 0 1-4 0"/></svg>
+              iPhone / iPad <span class="tab-tag">Users</span>
+            </button>
+            <button class="tab-btn" role="tab" id="tab-desktop" aria-controls="panel-desktop" aria-selected="false" onclick="switchInstallTab('desktop')">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+              Desktop / Laptop <span class="tab-tag">Admin</span>
+            </button>
+          </div>
+
+          <!-- Android panel -->
+          <div class="tab-panel active" id="panel-android" role="tabpanel" aria-labelledby="tab-android">
+            <div class="install-grid">
+              <div class="install-steps">
+                <h3>Install on Android</h3>
+                <ol class="step-list">
+                  <li><span class="li-num">1</span><span>Open the official CDM LibHub application link using <strong>Google Chrome</strong>.</span></li>
+                  <li><span class="li-num">2</span><span>Wait for the application to load completely.</span></li>
+                  <li><span class="li-num">3</span><span>If an <strong>Install App</strong> or <strong>Add to Home Screen</strong> banner appears, tap it.</span></li>
+                  <li><span class="li-num">4</span><span>If no banner appears, open Chrome's three-dot menu and look for <strong>Install app</strong> or <strong>Add to Home screen</strong>.</span></li>
+                  <li><span class="li-num">5</span><span>Confirm the prompt and wait for the installation to finish.</span></li>
+                  <li><span class="li-num">6</span><span>Find the LibHub icon on your home screen or app drawer and launch it.</span></li>
+                </ol>
+                <a href="https://portal.cdmconnect.online/" class="btn btn-primary" target="_blank" rel="noopener">
+                  Open LibHub Mobile
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+                <p class="install-note">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0Z"/></svg>
+                  Menu labels may vary by Android version and browser build. Standard Google Chrome is recommended for the best PWA experience.
+                </p>
+              </div>
+              <div class="install-visual">
+                <div class="mock-phone small">
+                  <div class="mock-phone-frame">
+                    <div class="mock-phone-notch"></div>
+                    <div class="mock-screen">
+                      <div class="chrome-url">libhub.cdm.edu.ph/mobile</div>
+                      <div class="menu-sheet">
+                        <div class="menu-item highlight">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg>
+                          Install LibHub app
+                        </div>
+                        <div class="menu-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg> Add to Home screen</div>
+                        <div class="menu-item muted"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Desktop site</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- iOS panel -->
+          <div class="tab-panel" id="panel-ios" role="tabpanel" aria-labelledby="tab-ios">
+            <div class="install-grid">
+              <div class="install-steps">
+                <h3>Install on iPhone / iPad</h3>
+                <ol class="step-list">
+                  <li><span class="li-num">1</span><span>Open the official LibHub link in Apple <strong>Safari</strong>.</span></li>
+                  <li><span class="li-num">2</span><span>Tap the <strong>Share</strong> button at the bottom of the screen.</span></li>
+                  <li><span class="li-num">3</span><span>Scroll down the actions and tap <strong>Add to Home Screen</strong>.</span></li>
+                  <li><span class="li-num">4</span><span>Confirm the app title and tap <strong>Add</strong> at the top right.</span></li>
+                  <li><span class="li-num">5</span><span>Open LibHub directly from your new Home Screen icon.</span></li>
+                </ol>
+                <a href="https://portal.cdmconnect.online/" class="btn btn-primary" target="_blank" rel="noopener">
+                  Open LibHub Mobile
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+                <p class="install-note">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0Z"/></svg>
+                  On iOS, install through Safari only. Third-party iOS browsers (like Chrome or Firefox) do not support home screen PWA installation.
+                </p>
+              </div>
+              <div class="install-visual">
+                <div class="mock-phone small">
+                  <div class="mock-phone-frame">
+                    <div class="mock-phone-notch"></div>
+                    <div class="mock-screen">
+                      <div class="chrome-url">libhub.cdm.edu.ph/mobile</div>
+                      <div class="share-sheet">
+                        <span class="share-title">Share</span>
+                        <div class="share-row">
+                          <span class="share-ico g"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v14"/></svg></span>
+                          <span class="share-ico y"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg></span>
+                          <span class="share-ico r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg></span>
+                        </div>
+                        <div class="share-actions">
+                          <div class="menu-item highlight">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg>
+                            Add to Home Screen
+                          </div>
+                          <div class="menu-item muted"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/></svg> Add to Reading List</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desktop panel -->
+          <div class="tab-panel" id="panel-desktop" role="tabpanel" aria-labelledby="tab-desktop">
+            <div class="install-grid">
+              <div class="install-steps">
+                <h3>Administrative Access on Desktop</h3>
+                <p class="panel-lead">The LibHub administrative terminal is used on a desktop or laptop computer at the circulation counter. Students and faculty use the mobile app — see the Android or iPhone tabs.</p>
+                <ol class="step-list">
+                  <li><span class="li-num">1</span><span>Open the LibHub desktop desk terminal using a <strong>desktop browser</strong> (Chrome or Edge).</span></li>
+                  <li><span class="li-num">2</span><span>Sign in with your <strong>authorized Librarian or Staff account</strong>.</span></li>
+                  <li><span class="li-num">3</span><span>Optionally, click the browser's <strong>Install app</strong> icon in the address bar to add a desktop shortcut.</span></li>
+                  <li><span class="li-num">4</span><span>Launch from your desktop or Start menu for full-screen barcode and scanner operations.</span></li>
+                </ol>
+                <a href="https://portal.cdmconnect.online/" class="btn btn-primary" target="_blank" rel="noopener">
+                  Open Desk Terminal
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+                <p class="install-note">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0Z"/></svg>
+                  The circulation desk interface is intended for desktop use with external barcode and QR scanners.
+                </p>
+              </div>
+              <div class="install-visual">
+                <div class="browser-mock">
+                  <div class="browser-bar">
+                    <span class="d"></span><span class="d"></span><span class="d"></span>
+                    <span class="browser-url">library.cdm.edu.ph<button class="browser-install" aria-label="Install app"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg></button></span>
+                  </div>
+                  <div class="browser-body">
+                    <span class="browser-install-toast">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg>
+                      Install CDM LibHub Desk
+                      <span class="browser-install-btn">Install</span>
+                    </span>
+                    <div class="browser-content">
+                      <span class="mock-line w40 tall"></span>
+                      <span class="mock-line w70 sm"></span>
+                      <div class="mock-stats small">
+                        <div class="mock-stat"><span class="mock-line w50 sm"></span><span class="mock-line w70 tall"></span></div>
+                        <div class="mock-stat"><span class="mock-line w50 sm"></span><span class="mock-line w85 tall"></span></div>
+                        <div class="mock-stat"><span class="mock-line w50 sm"></span><span class="mock-line w60 tall"></span></div>
+                      </div>
+                      <div class="mock-chart">
+                        <span style="height: 40%"></span><span style="height: 65%"></span><span style="height: 50%"></span><span style="height: 85%"></span><span style="height: 60%"></span><span style="height: 75%"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Installation Troubleshooting (Accordion) -->
+          <div class="troubleshoot">
+            <h3 class="troubleshoot-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+              Installation Troubleshooting
+            </h3>
+            <div class="ts-list">
+              <details class="ts-item">
+                <summary>Why is the Install option missing in my browser?</summary>
+                <p>The install prompt depends on your browser and connection. Ensure you open the official LibHub link in an updated version of Google Chrome (Android) or Apple Safari (iOS). Allow the page to load completely so the service worker can register. If the prompt does not appear, use the browser's menu to select "Add to Home Screen".</p>
+              </details>
+              <details class="ts-item">
+                <summary>Why does "Add to Home Screen" not appear on iPhone / iPad?</summary>
+                <p>On iOS, the option is located inside Safari's Share menu (the square icon with an upward arrow). Make sure you are using Safari, not Chrome or embedded in-app browsers like Facebook or Messenger, which do not support Safari PWA installation.</p>
+              </details>
+              <details class="ts-item">
+                <summary>Can I use LibHub without installing it?</summary>
+                <p>Yes! LibHub functions seamlessly as a responsive web application in any modern mobile browser. However, installing it to your home screen provides quick access, offline asset caching, and a full-screen native mobile experience.</p>
+              </details>
+              <details class="ts-item">
+                <summary>What should I do if the app shows outdated catalog data?</summary>
+                <p>Perform a quick refresh by pulling down the screen or clearing your browser cache. LibHub automatically caches core bibliographic data and syncs with the central database whenever an internet connection is detected.</p>
+              </details>
+              <details class="ts-item">
+                <summary>What should I do if my digital QR pass won't scan at the counter?</summary>
+                <p>Increase your screen brightness to maximum and ensure your phone display is free from severe cracks or glare. If optical scanning fails, circulation staff can quickly look up your account using your student number.</p>
+              </details>
+              <details class="ts-item">
+                <summary>What should I do if installation fails?</summary>
+                <p>Restart your browser and check your internet connection. If the issue persists, simply bookmark the web app link and access LibHub directly through your browser. You can also contact the library staff at the circulation counter for assistance.</p>
+              </details>
+            </div>
+            <p class="troubleshoot-foot">
+              Installability depends on your browser's Progressive Web App support and service worker registration. Installation occurs directly from the actual LibHub web application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DEVICE COMPATIBILITY ===================== -->
+    <section id="devices" class="section section-white">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">Compatibility</span>
+          <h2>Designed for Your Device</h2>
+          <p>Students and faculty use LibHub on mobile (installed as an app). Librarians use it on a desktop or laptop.</p>
+        </div>
+
+        <div class="device-grid">
+          <article class="device-card" data-reveal data-delay="1">
+            <div class="device-illo illo-phone" aria-hidden="true"><span class="screen"></span></div>
+            <span class="device-badge user">For users</span>
+            <h3>Mobile Phone</h3>
+            <p>Install LibHub to your phone from the Installation Guide and open it from your home screen — your primary way to search books, track due dates, and display your digital pass.</p>
+          </article>
+
+          <article class="device-card" data-reveal data-delay="2">
+            <div class="device-illo illo-tablet" aria-hidden="true"><span class="screen"></span></div>
+            <span class="device-badge user">For users</span>
+            <h3>Tablet</h3>
+            <p>Enjoy a comfortable, larger screen for browsing academic textbook syllabi, reading sample chapter previews, and managing seminar reservations.</p>
+          </article>
+
+          <article class="device-card" data-reveal data-delay="3">
+            <div class="device-illo illo-desktop" aria-hidden="true"><span class="stand"></span><span class="screen"></span></div>
+            <span class="device-badge admin">For librarians</span>
+            <h3>Desktop / Laptop</h3>
+            <p>The circulation desk terminal is optimized for desktop computers, integrating counter barcode scanners, inventory spreadsheets, and institutional reports.</p>
+          </article>
+        </div>
+
+        <div class="device-legend" data-reveal>
+          <div class="legend-item"><span class="legend-dot pwa"></span> <strong>Mobile (installed app)</strong> — how students &amp; faculty use LibHub.</div>
+          <div class="legend-item"><span class="legend-dot admin"></span> <strong>Desktop / laptop</strong> — for circulation desk and library administrators.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== USER ROLES & ACCESS ===================== -->
+    <section id="roles" class="section section-dark">
+      <div class="container">
+        <div class="section-header on-dark" data-reveal>
+          <span class="eyebrow on-dark">Who uses LibHub</span>
+          <h2>Built for Students, Faculty, and Librarians</h2>
+          <p>Tailored access and privileges designed for each campus role.</p>
+        </div>
+
+        <div class="roles-grid">
+          <article class="role-card" data-reveal data-delay="1">
+            <span class="role-ico">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </span>
+            <h3>Students &amp; Faculty</h3>
+            <ul>
+              <li>Use LibHub on your phone by installing the progressive web app.</li>
+              <li>Sign in using your CDM student or faculty ID.</li>
+              <li>Borrow up to 3 books for 3 days (Students) or 10 books for 30 days (Faculty).</li>
+              <li>Stage high-demand textbook reservations with a guaranteed 48-hour pickup window.</li>
+              <li>Present your dynamic 2D QR pass at the entrance kiosk and checkout counter.</li>
+            </ul>
+            <a href="https://portal.cdmconnect.online/" class="btn btn-gold btn-sm" target="_blank" rel="noopener">Install LibHub Mobile</a>
+          </article>
+
+          <article class="role-card" data-reveal data-delay="2">
+            <span class="role-ico">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+            </span>
+            <h3>Librarians &amp; Administrators</h3>
+            <ul>
+              <li>Access the administrative circulation desk terminal on a desktop or laptop.</li>
+              <li>Sign in using authorized staff credentials (Head Librarian or Desk Assistant).</li>
+              <li>Scan patron QR passes and process checkouts and returns in seconds.</li>
+              <li>Inspect returned book condition (Good, Damaged, Lost) with zero monetary fine logic.</li>
+              <li>Export tabular transaction logs and collections inventory for CHED auditing.</li>
+            </ul>
+            <span class="btn btn-ghost btn-sm">Desktop / laptop only</span>
+          </article>
+        </div>
+        <p class="roles-note" data-reveal>The administrative terminal is restricted to authorized Colegio de Montalban library personnel.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="section section-light">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Answers to common questions about CDM LibHub and library policies.</p>
+        </div>
+
+        <div class="faq-container" data-reveal>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What is CDM LibHub?
+              <span class="faq-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>CDM LibHub is the integrated multi-platform library management system of Colegio de Montalban. It combines a student-facing mobile progressive web app (PWA) with a librarian desktop circulation terminal to automate cataloging, book reservations, entrance logging, and loan tracking.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How does CDM LibHub integrate with the CDM: OneServe mother portal?
+              <span class="faq-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>CDM LibHub functions as the dedicated library service ecosystem for Colegio de Montalban. <strong>CDM: OneServe</strong> (<a href="https://student.cdmconnect.online" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 700;">student.cdmconnect.online</a>) is the institutional mother system that manages college-wide student enrollment, grading, and campus services. Both systems work harmoniously to provide a unified digital campus experience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What are the borrowing quotas and loan periods?
+              <span class="faq-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p><strong>Students</strong> may borrow up to 3 physical books for 3 calendar days, with 1 renewal permitted if no reservation queue exists. <strong>Faculty members</strong> may borrow up to 10 books for 30 calendar days to support curriculum instruction and syllabus preparation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Are there daily monetary cash fines for overdue books?
+              <span class="faq-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>No! Under official Colegio de Montalban policy, the library enforces a <strong>₱0.00 cash fine policy</strong>. Students never incur accumulating monetary debt. Instead, overdue items dispatch automated SMS reminder notices and enforce a temporary borrowing hold until the book is returned to the stacks.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What happens if a borrowed book is lost or damaged?
+              <span class="faq-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Borrowers must provide a <strong>mandatory physical duplicate replacement copy</strong> matching the exact Title, Author, ISBN, and Edition (or newer). Cash buyouts are strictly prohibited to safeguard the physical collection of the college. Once the replacement copy is verified by library staff, the account hold is lifted.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I reserve a book from the mobile app?
+              <span class="faq-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Open the LibHub mobile app, search for your desired title, and tap "Reserve Book". Circulation staff will stage the volume behind the counter. You have a guaranteed <strong>48-hour pickup window</strong> to present your QR pass at the circulation desk before the reservation expires and returns to the general stacks.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Who should I contact if I encounter an issue with my library account?
+              <span class="faq-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>For circulation holds, clearance questions, or barcode verification, please visit the main library circulation counter at the CDM Main Campus (Kasiglahan Village, San Jose, Rodriguez, Rizal) or coordinate with the library staff during regular campus hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CALL TO ACTION ===================== -->
+    <section class="cta">
+      <div class="cta-bg" aria-hidden="true">
+        <span class="cta-ring r1"></span>
+        <span class="cta-ring r2"></span>
+      </div>
+      <div class="container ca-inner" data-reveal>
+        <h2>Your Library. Your Books. One App.</h2>
+        <p>Start exploring Colegio de Montalban's academic collection with CDM LibHub.</p>
+        <div class="cta-buttons">
+          <a href="https://student.cdmconnect.online" class="btn btn-gold" target="_blank" rel="noopener noreferrer">
+            Open CDM OneServe
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a href="#install" class="btn btn-outline-light">View Installation Guide</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER (Clean Mother System Style, No Member Names) ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-badge">
+            <img src="logo.jpg" alt="CDM Logo">
+            <div class="logo-text">
+              <span class="logo-title">CDM LibHub</span>
+              <span class="logo-subtitle">Colegio de Montalban</span>
+            </div>
+          </div>
+        </div>
+        <p>
+          An integrated multi-platform library management system for Colegio de Montalban. Library Hub. Every Book Within Reach.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#catalog">Book Catalog</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#install">Installation Guide</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Library Services</h4>
+        <a href="#catalog">Book Catalog</a>
+        <a href="#services">Counter Reservations</a>
+        <a href="#services">Active Loans &amp; Renewals</a>
+        <a href="#services">Digital QR Pass</a>
+        <a href="#services">Desk Terminal (Admin)</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <a href="https://student.cdmconnect.online" target="_blank" rel="noopener noreferrer">Open CDM OneServe ↗</a>
+        <a href="http://localhost:5173/mobile" target="_blank" rel="noopener">Install LibHub Mobile</a>
+        <a href="http://localhost:5173/" target="_blank" rel="noopener">Librarian Desk Terminal</a>
+        <a href="#devices">Device Compatibility</a>
+        <span class="footer-contact">San Jose, Rodriguez (Montalban), Rizal</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 CDM LibHub — Colegio de Montalban. All rights reserved.</p>
+      <p class="footer-note">This is the official promotional site. The live applications are accessed through LibHub and CDM OneServe.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script src="config.js"></script>
+  <script src="app.js?v=3"></script>
+</body>
+</html>

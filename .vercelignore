@@ -1,0 +1,5 @@
+# Ignore local development server & node environment on Vercel static deployment
+server.js
+cdm-libhub-promotional-website/
+.DS_Store
+
