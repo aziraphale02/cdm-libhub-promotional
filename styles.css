@@ -2536,8 +2536,20 @@ p, h1, h2, h3, h4, li, a, span, summary {
     padding-bottom: 2.8rem;
 }
 
-.footer-brand .logo {
-    margin-bottom: 1rem;
+.footer-brand .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 1.15rem;
+    padding: 0;
+    line-height: 0;
+}
+
+.footer-brand .footer-logo .logo-full {
+    display: block;
+    height: 44px;
+    width: auto;
+    max-width: 100%;
 }
 
 .footer-brand p {
@@ -2883,11 +2895,15 @@ p, h1, h2, h3, h4, li, a, span, summary {
 }
 
 @media (max-width: 380px) {
-    .logo-folio-shift .logo-full {
+    .header .logo-folio-shift .logo-full {
         display: none;
     }
-    .logo-folio-shift .logo-mark-only {
+    .header .logo-folio-shift .logo-mark-only {
         display: block;
+        height: 36px;
+    }
+    .footer-brand .footer-logo .logo-full {
+        display: block !important;
         height: 36px;
     }
 }
